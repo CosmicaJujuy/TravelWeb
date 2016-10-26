@@ -15,6 +15,6 @@
     function runApp($translate, selectedLanguage) {
         $translate.use(selectedLanguage);
     }
-    
+
 })();
 
