@@ -1,23 +1,46 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
+<div ng-cloak
+     md-theme="tour">
+    <md-content>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <md-button class="md-icon-button" aria-label="Settings">
+                    <md-icon>&#xE5D2;</md-icon>
+                </md-button>
+                <h2 flex="15">
+                    <span><a href="/">Turismo Jujuy</a></span>
+                </h2>
+                <h2 flex="15">
+                    <span><a href="/">{{'DESTINOS'| translate}}</a></span>
+                </h2>
+                <h2 flex="15">
+                    <span><a href="/">{{'SERVICIOS'| translate}}</a></span>
+                </h2>
+                <span flex></span>
+                <h2>
+                    <md-button class="md-fab" aria-label="Spanish"
+                               ng-class="{'md-raised': vm.selectedLanguage == 'es'}"
+                               ng-click="vm.changeLanguage('es')">
+                        <span class="flag-icon flag-icon-es"></span>
+                    </md-button>
+                    <md-button class="md-fab" aria-label="English"
+                               ng-class="{'md-raised': vm.selectedLanguage == 'en'}"
+                               ng-click="vm.changeLanguage('en')">
+                        <span class="flag-icon flag-icon-us"></span>
+                    </md-button>                    
+                </h2>
+                <md-button class="md-icon-button" aria-label="More">
+                    <md-icon>&#xE5D4;</md-icon>
+                </md-button>
+                <md-button class="md-raised" aria-label="Log in">
+                    <span>{{'LOG_IN'| translate}}</span>
+                </md-button>
+                <md-button aria-label="Sign in"
+                           class="md-raised"
+                           md-colors="{background: 'green'}">
+                    <span>{{'SIGN_IN'| translate}}</span>
+                </md-button>
+            </div>
+        </md-toolbar>
+    </md-content>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
 </div>
