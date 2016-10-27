@@ -1,8 +1,8 @@
 {
     "name": "travel",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "dependencies": {
-        "angular": "^1.5.7",
+        "angular": "^*",
         "angular-animate": "*",
         "angular-cookies": "*",
         "angular-messages": "*",
