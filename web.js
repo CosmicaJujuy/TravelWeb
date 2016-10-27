@@ -5,4 +5,4 @@ var path = require('path');
 appExp.use(express.static(__dirname));
 appExp.use(express.static(path.join(__dirname, '/dist')));
 
-var server = app.listen(process.env.PORT || 80);
+var server = appExp.listen(process.env.PORT || 80);
