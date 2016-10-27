@@ -8,12 +8,7 @@
 
     angular
             .module('travelApp')
-            .value('selectedLanguage', selectedLanguage);
-    
-    function selectedLanguage() {
-        var resource = 'en';
-        return resource;
-    }
+            .value('selectedLanguage', 'en');    
 
 })();
 
